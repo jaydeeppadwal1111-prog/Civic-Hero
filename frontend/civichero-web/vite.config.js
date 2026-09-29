@@ -17,6 +17,7 @@ export default defineConfig({
     globals: true,
     setupFiles: './src/test/setupTests.js',
     css: true,
+    include: ['src/**/*.{test,spec}.{js,jsx}'],
     exclude: ['e2e/**'],
     coverage: {
       provider: 'v8',
