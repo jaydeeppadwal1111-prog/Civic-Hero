@@ -17,6 +17,7 @@ export default defineConfig({
     globals: true,
     setupFiles: './src/test/setupTests.js',
     css: true,
+    exclude: ['e2e/**'],
     coverage: {
       provider: 'v8',
       reporter: ['text', 'html', 'lcov', 'json-summary'],
